@@ -1,0 +1,608 @@
+/* Grundlegende Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#top-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Such- und Warenkorb */
+#search {
+    margin-top: 10px;
+}
+
+#search input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+#search button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #555;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#search button:hover {
+    background-color: #666;
+}
+
+#cart {
+    margin-top: 10px;
+}
+
+#cart a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #555;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+#cart a:hover {
+    background-color: #666;
+}
+
+/* Burger-Menü (für mobile Navigation) */
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+/* Hero Section */
+#hero {
+    background-image: url('img/hoddie-background.webp'); /* Passe den Bildpfad an */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 60px 20px; /* Reduziere das Padding für einen kompakteren Bereich */
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px; /* Reduziere die Höhe des Hero-Bereichs */
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.6); /* Verdunkelter Hintergrund hinter dem Text */
+    padding: 30px; /* Reduziere das Padding der Textbox */
+    border-radius: 10px;
+    max-width: 700px; /* Reduziere die Breite der Box */
+    width: 100%;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+#hero h1 {
+    font-size: 2em; /* Kleinere Schriftgröße für den Titel */
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#hero .btn {
+    background-color: #e91e63;
+    color: #fff;
+    padding: 10px 20px; /* Kleinere Schaltfläche */
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1em; /* Kleinere Schrift */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#hero .btn:hover {
+    background-color: #d81b60;
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+
+
+
+
+/* Featured Products Section */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.product h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.product dl {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.product dl dt {
+    font-weight: bold;
+}
+
+.product dl dd {
+    margin-left: 0;
+    margin-bottom: 10px;
+}
+
+.product .btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.product .btn:hover {
+    background-color: #444;
+}
+
+/* Testimonials Section */
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.testimonial {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+    max-width: 100px;
+    height: auto;
+}
+
+.testimonial h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.testimonial blockquote {
+    font-style: italic;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Formulare */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+form div {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background-color: #444;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#footer-links ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#footer-links ul li {
+    margin: 5px 15px;
+}
+
+#footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#footer-links ul li a:hover {
+    color: #ddd;
+}
+
+#social-media {
+    margin-bottom: 20px;
+}
+
+#social-media a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+#social-media a:hover {
+    color: #ddd;
+}
+
+#copyright {
+    margin-top: 10px;
+}
+
+#copyright p {
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+/* Responsive Anpassungen */
+@media (max-width: 768px) {
+    #top-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+        width: 100%;
+        display: none; /* Navigation standardmäßig verstecken */
+    }
+
+    nav.active ul {
+        display: flex;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    #search, #cart {
+        margin-top: 10px;
+        align-self: flex-end;
+    }
+
+    .product-grid, .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Burger-Menü */
+    .burger {
+        display: block;
+    }
+
+    /* Burger-Menü Animation */
+    .toggle div:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .toggle div:nth-child(2) {
+        opacity: 0;
+    }
+
+    .toggle div:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+}
+
+@media (max-width: 600px) {
+    #hero {
+        padding: 30px 10px;
+    }
+
+    #hero h1 {
+        font-size: 1.5em;
+    }
+
+    #hero .btn {
+        padding: 8px 16px;
+    }
+
+    nav ul li a {
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .product dl {
+        font-size: 0.9em;
+    }
+
+    .testimonial img {
+        max-width: 80px;
+    }
+}
+
+/* Allgemeine Stile für Highlight-Abschnitte */
+.highlight-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+/* Stile für die Einführungssektion */
+#about-intro {
+    text-align: center;
+    padding: 50px 20px;
+    background: #333;
+    color: white;
+}
+
+#about-intro h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#about-intro p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Stile für Mission Section */
+#mission .content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+#mission img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#mission .mission-text {
+    text-align: left;
+}
+
+#mission .mission-text p {
+    font-size: 1.2em;
+}
+
+#mission .btn {
+    display: inline-block;
+    background-color: #e91e63;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+#mission .btn:hover {
+    background-color: #d81b60;
+}
+
+/* Werte Sektion */
+#values {
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+#values h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.value-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.value-item {
+    text-align: center;
+}
+
+.value-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.value-item h3 {
+    margin: 15px 0;
+    color: #333;
+}
+
+.value-item p {
+    color: #555;
+}
+
+/* Team Sektion */
+#team h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.team-member p {
+    color: #555;
+}

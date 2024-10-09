@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <!-- Meta-Tags und Titel -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Hoodie Shop</title>
+    <meta name="description" content="Geben Sie Ihr Feedback zu unserer Webseite und unseren Produkten.">
+    <meta name="keywords" content="Feedback, Bewertung, Hoodie Shop">
+    <meta name="author" content="Ihr Name">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/feedback.css">
+</head>
+<body> 
+    <!-- Header-Platzhalter -->
+    <header id="header"></header>
+
+    <!-- Feedbackinhalt -->
+    <main>
+        <section id="feedback">
+            <h1>Feedback</h1>
+            <p>Wir schätzen Ihr Feedback! Bitte füllen Sie das untenstehende Formular aus, um uns Ihre Meinung mitzuteilen.</p>
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Ihre Informationen</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">E-Mail-Adresse:</label>
+                    <input type="email" id="email" name="email" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Ihr Feedback</legend>
+                    <label for="design-rating">Bewertung des Designs:</label>
+                    <select id="design-rating" name="design-rating" required>
+                        <option value="">Bitte wählen</option>
+                        <option value="1">1 - Sehr schlecht</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10 - Hervorragend</option>
+                    </select>
+
+                    <label for="components-rating">Bewertung der Komponenten:</label>
+                    <select id="components-rating" name="components-rating" required>
+                        <option value="">Bitte wählen</option>
+                        <option value="1">1 - Sehr schlecht</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10 - Starke Qualität</option>
+                    </select>
+
+                    <p>Welche Produktkategorie gefällt Ihnen am besten?</p>
+                    <label>
+                        <input type="radio" id="men" name="favorite-category" value="men" required>
+                        Herren
+                    </label>
+                    <label>
+                        <input type="radio" id="women" name="favorite-category" value="women">
+                        Damen
+                    </label>
+                    <label>
+                        <input type="radio" id="unisex" name="favorite-category" value="unisex">
+                        Unisex
+                    </label>
+
+                    <label for="comments">Kommentar:</label>
+                    <textarea id="comments" name="comments" rows="4"></textarea>
+                </fieldset>
+                <button type="submit">Feedback absenden</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer-Platzhalter -->
+    <footer id="footer"></footer>
+
+    <!-- Skripte am Ende des Body -->
+    <script defer src="js/loadHeaderFooter.js"></script><!-- Vanilla JS zum Laden von Header und Footer -->
+    <script defer src="js/navigation.js"></script><!--- Skript für das Burger-Menu / Navigationsleiste für kleinere Bildschirme -->
+</body>
+</html>

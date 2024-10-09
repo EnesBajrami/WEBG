@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <!-- Meta-Tags und Titel -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - Hoodie Shop</title>
+    <meta name="description" content="Kontaktieren Sie uns bei Fragen, Anregungen oder Anliegen.">
+    <meta name="keywords" content="Kontakt, Kundenservice, Hoodie Shop">
+    <meta name="author" content="Ihr Name">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <!-- Header-Platzhalter -->
+    <header id="header"></header>
+
+    <!-- Kontaktinhalt -->
+    <main>
+        <section id="contact">
+            <h1>Kontakt</h1>
+            <p>Haben Sie Fragen, Anregungen oder ein Anliegen? Kontaktieren Sie uns gerne über das untenstehende Formular.</p>
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Ihre Kontaktinformationen</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">E-Mail-Adresse:</label>
+                    <input type="email" id="email" name="email" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Ihr Anliegen</legend>
+                    <label for="subject">Betreff:</label>
+                    <input type="text" id="subject" name="subject" required>
+
+                    <label for="category">Kategorie:</label>
+                    <select id="category" name="category" required>
+                        <option value="">Bitte wählen</option>
+                        <option value="frage">Frage</option>
+                        <option value="anregung">Anregung</option>
+                        <option value="beschwerde">Beschwerde</option>
+                    </select>
+
+                    <p>Wie haben Sie von uns erfahren?</p>
+                    <label>
+                        <input type="radio" id="social_media" name="referral" value="social_media" required>
+                        Soziale Medien
+                    </label>
+                    <label>
+                        <input type="radio" id="friend" name="referral" value="friend">
+                        Freunde/Familie
+                    </label>
+                    <label>
+                        <input type="radio" id="search_engine" name="referral" value="search_engine">
+                        Suchmaschine
+                    </label>
+
+                    <label for="message">Nachricht:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </fieldset>
+                <button type="submit">Nachricht senden</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer-Platzhalter -->
+    <footer id="footer"></footer>
+
+    <!-- Skripte am Ende des Body -->
+    <script defer src="js/loadHeaderFooter.js"></script><!-- Vanilla JS zum Laden von Header und Footer -->
+    <script defer src="js/navigation.js"></script><!--- Skript für das Burger-Menu / Navigationsleiste für kleinere Bildschirme -->
+</body>
+</html>

@@ -1,0 +1,52 @@
+/* feedback.css */
+#feedback {
+    max-width: 800px; /* Breite des Feedback-Abschnitts */
+    margin: 20px auto; /* Zentrale Ausrichtung */
+    padding: 20px;
+    background-color: #fff; /* Hintergrundfarbe */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#feedback h1 {
+    color: #555;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Globale Styles für die Eingabefelder */
+form {
+    margin-top: 20px;
+}
+
+form label {
+    color: #333;
+    display: block; /* Labels blockieren für bessere Sichtbarkeit */
+    margin-top: 10px; /* Abstand zu vorherigem Element */
+}
+
+form input[type="text"],
+form input[type="email"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px; /* Abstand zwischen Label und Eingabefeld */
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 15px; /* Abstand zum vorherigen Element */
+}
+
+form button:hover {
+    background-color: #444;
+}
